@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 72px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f2;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #315bea;
+}
+
+
+.nav-status {
+    font-size: 14px;
+    color: #68738a;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #eef3ff,
+        #ffffff
+    );
+}
+
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+.badge,
+.section-label {
+    color: #315bea;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.hero h1 {
+    margin-top: 15px;
+
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+
+.hero h1 span {
+    display: block;
+    color: #315bea;
+}
+
+
+.hero-text {
+    max-width: 700px;
+    margin-top: 25px;
+
+    font-size: 18px;
+    color: #5d687d;
+}
+
+
+.primary-btn,
+.analyze-btn {
+    border: none;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+
+.primary-btn {
+    margin-top: 30px;
+    padding: 15px 25px;
+
+    background: #315bea;
+    color: white;
+}
+
+
+.primary-btn:hover,
+.analyze-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.request-section,
+.process-section {
+    padding: 90px 8%;
+}
+
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+
+.section-heading h2 {
+    margin-top: 8px;
+
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+
+.section-heading > p:last-child {
+    margin-top: 12px;
+    color: #69748a;
+}
+
+
+/* ================= REQUEST CONTAINER ================= */
+
+.request-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    max-width: 1150px;
+}
+
+
+/* ================= FORM ================= */
+
+#requestForm,
+.result-card {
+    background: white;
+
+    border: 1px solid #e4e8f0;
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 35px rgba(30, 50, 90, 0.06);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d9dfeb;
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+input:focus {
+    border-color: #315bea;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 10px 0 25px;
+}
+
+
+.checkbox-container label {
+    font-size: 14px;
+}
+
+
+.analyze-btn {
+    width: 100%;
+    padding: 14px;
+
+    background: #315bea;
+    color: white;
+}
+
+
+/* ================= RESULT ================= */
+
+.result-card {
+    min-height: 100%;
+}
+
+
+.result-placeholder {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.result-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef3ff;
+    color: #315bea;
+
+    font-weight: 800;
+}
+
+
+.result-placeholder h3 {
+    margin-top: 20px;
+}
+
+
+.result-placeholder p {
+    margin-top: 8px;
+    color: #69748a;
+}
+
+
+/* ================= RESULT CONTENT ================= */
+
+.result-title {
+    font-size: 14px;
+    color: #69748a;
+}
+
+
+.decision {
+    margin: 8px 0 25px;
+
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+.result-section {
+    padding: 18px 0;
+
+    border-top: 1px solid #e8ebf1;
+}
+
+
+.result-section h4 {
+    margin-bottom: 8px;
+}
+
+
+.result-section p {
+    color: #59657a;
+}
+
+
+.room-box {
+    padding: 15px;
+
+    background: #f6f8fc;
+
+    border-radius: 10px;
+}
+
+
+.policy-item {
+    padding: 10px 0;
+
+    color: #59657a;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+
+.loading {
+    text-align: center;
+    color: #315bea;
+    font-weight: 700;
+}
+
+
+/* ================= PROCESS ================= */
+
+.process-section {
+    background: #ffffff;
+}
+
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.process-card {
+    padding: 25px;
+
+    border: 1px solid #e4e8f0;
+    border-radius: 15px;
+
+    background: #fafbfe;
+}
+
+
+.process-number {
+    font-size: 13px;
+    font-weight: 800;
+    color: #315bea;
+}
+
+
+.process-card h3 {
+    margin-top: 12px;
+}
+
+
+.process-card p {
+    margin-top: 8px;
+
+    font-size: 14px;
+    color: #69748a;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 45px 8%;
+
+    background: #111827;
+    color: white;
+}
+
+
+footer p {
+    margin-top: 8px;
+    color: #aeb6c5;
+}
+
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .request-container {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-status {
+        display: none;
+    }
+
+    .hero,
+    .request-section,
+    .process-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
